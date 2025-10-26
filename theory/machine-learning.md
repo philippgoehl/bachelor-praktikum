@@ -26,6 +26,8 @@ In `Reinforcement Learning`, an agent interacts with an environment and learns o
 
 ## Backpropagation
 
+[![Video on Backpropagation](https://img.youtube.com/vi/Ilg3gGewQ5U/0.jpg)](https://www.youtube.com/watch?v=Ilg3gGewQ5U&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=3)
+
 To train a neural network, we need to communicate the `error or deviation` of the output back through the network to adjust its parameters.  
 This process is called `backpropagation`.
 
