@@ -1,0 +1,18 @@
+services:
+  flower_server:
+    image: flwr/server:1.7.0-py3.10-ubuntu22.04
+    ports:
+      - "9091:9091"
+      - "9092:9092"
+    volumes:
+      - .:/app/
+    entrypoint: ["/bin/sh","-c"]
+    command:
+    - |
+      echo "This is FL-Env - I'm running..."
+      echo "################# init setup ####################"
+      python3 -m pip install --upgrade pip
+      python3 -m pip install -qr ./requirements.txt
+      
+      echo "################# start main ####################"
+      python3 ./main.py
