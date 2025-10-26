@@ -36,6 +36,8 @@ Each neuron passes its output to the next layer without feedback loops.
 
 ### Convolutional Neural Networks (CNNs)
 
+[![Video on Convolutional Neural Networks](https://img.youtube.com/vi/zfiSAzpy9NM/0.jpg)](https://www.youtube.com/watch?v=zfiSAzpy9NM&t=386s)
+
 For more complex data structures, such as 2D arrays (e.g., images), `Convolutional Neural Networks (CNNs)` are used.  
 CNNs apply convolutional filters that capture spatial hierarchies and local dependencies in the data.  
 This approach bridges the gap between small networks that lack expressive power and large networks that risk `overfitting`.
