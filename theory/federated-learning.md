@@ -3,6 +3,9 @@
 > “Data is the new oil.”  
 > It’s valuable — but just like crude oil, it must be refined before it can be truly useful.
 
+Federated Learning (FL) is a distributed ML approach where model training happens where the data resides (e.g., phones, hospitals, edge devices).
+Instead of uploading raw data to a central server, participating clients compute local model updates and send only metadata (e.g., gradients or weights) to a coordinating server, which aggregates them into a new global model and broadcasts it back for the next training round.
+
 ## The Challenge of Classic Machine Learning
 
 Traditional (centralized) `Machine Learning` relies on collecting and storing all data in one place — typically on powerful servers or in the cloud.  
@@ -21,16 +24,28 @@ Instead of centralizing data, the learning process takes place locally — on de
 
 ### Key Advantages
 
-- `Higher Privacy:`  
-  Data remains local and never leaves the user’s device or organization, significantly reducing privacy risks.
-
+- `Privacy by design:`  
+  No raw data leaves the device; only model updates are shared. This reduces, but does not eliminate, privacy risk. Practitioners typically add secure aggregation, differential privacy, and robust aggregation to harden guarantees.
+- `Regulatory alignment:`
+  With the EU AI Act (in force since 01-08-2024), organizations face stronger requirements around data governance, transparency, and risk management. FL can support compliance by minimizing central data collection and improving data provenance and access control.
 - `Collaborative Learning with Sensitive Data:`  
   Enables cooperation between multiple institutions (e.g., hospitals, banks) — known as `cross-silo learning` — without exposing confidential information.
-
+- `Efficiency & scale`:
+  Training leverages decentralized compute, lowering server load and network transfer.
 - `Efficient Resource Utilization:`  
   Leverages the `computational power of edge or mobile devices` for distributed training, known as `cross-device learning`.
+- `Speed`:
+  Frequent aggregation rounds enable “exchange of learning progress,” often shortening time-to-improvement compared to waiting for periodic central uploads.
+- `Ubiquity of edge devices`:
+  In the age of mobile and IoT, over half of the world’s population owns a smartphone (≈54% in 2023), making on-device learning broadly feasible.
 
 Federated Learning thus combines the strengths of distributed computing and privacy-aware data management — allowing modern AI systems to learn from diverse, decentralized data sources while maintaining compliance and trust.
+
+### Typical use cases
+
+- On-device personalization (keyboards, recommendations) without uploading sensitive user text or behavior.
+- Cross-institution healthcare or finance, where data cannot leave premises but joint models are valuable.
+- Industrial/IoT settings with limited bandwidth or intermittent connectivity.
 
 ## The Idea of Federated Learning
 
