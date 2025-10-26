@@ -1,6 +1,18 @@
+# Neural Networks
+
+<iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/aircAruvnKk?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" 
+    title="Was ist ein neuronales Netz?" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+
 ## Types of Neural Networks
 
-## Artificial Neural Networks (ANNs)
+### Artificial Neural Networks (ANNs)
 
 `Artificial Neural Networks (ANNs)` are computational models inspired by the human brain’s structure. They are particularly effective for complex tasks such as `image classification`, `speech recognition`, and `natural language processing`.
 
@@ -10,14 +22,14 @@
 - ANN h(·; w ): a lot of parameters
 - Output y ∈ Y: cat / dog
 
-### Artificial Neuron
+#### Artificial Neuron
 
 An `artificial neuron` processes weighted inputs from preceding neurons and outputs a signal to the next layer when activated.  
 It can be represented mathematically as a `weighted sum` followed by an `activation function`.
 
 ![An artificial neuron as function of a weighted sum](./images/neural-network-artificial-neuron.png)
 
-### Activation Functions
+#### Activation Functions
 
 `Activation functions` determine when a neuron should "fire" and introduce non-linearity into the network, enabling it to learn complex patterns.
 
@@ -30,7 +42,7 @@ Each neuron passes its output to the next layer without feedback loops.
 
 ![Feed-Forward Neural Network](./images/neural-network-feed-forward.png)
 
-## Convolutional Neural Networks (CNNs)
+### Convolutional Neural Networks (CNNs)
 
 For more complex data structures, such as 2D arrays (e.g., images), `Convolutional Neural Networks (CNNs)` are used.  
 CNNs apply convolutional filters that capture spatial hierarchies and local dependencies in the data.  
