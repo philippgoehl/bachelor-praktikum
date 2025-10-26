@@ -1,14 +1,6 @@
 # Neural Networks
 
-<iframe 
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/aircAruvnKk?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" 
-    title="Was ist ein neuronales Netz?" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
+[![Video on Neural Networks](https://img.youtube.com/vi/aircAruvnKk/0.jpg)](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
 
 ## Types of Neural Networks
 
