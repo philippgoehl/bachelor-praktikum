@@ -72,7 +72,7 @@ This quantified error is used to adjust the model’s parameters and improve its
 
 ### Mean Square Error (MSE)
 
-[MSE](./images/mse.png)
+![MSE](./images/mse.png)
 
 The **Mean Square Error (MSE)** measures the average squared difference between the predicted values and the actual (true) values.  
 It quantifies how close the model’s predictions are to the real outcomes — smaller values indicate better performance.  
@@ -80,9 +80,9 @@ Because the errors are squared, larger mistakes are penalized more heavily, maki
 
 ### Cross-Entropy-Loss (binary Classification)
 
-[CE](./images/ce.png)
+![CE](./images/ce.png)
 
-Here, \( C \) denotes the set of classes, \( \beta \) is a binary indicator (e.g., ±1), and \( p\_{o,c} \) represents the predicted probability that an object \( o \) belongs to class \( c \).
+Here, C denotes the set of classes, β is a binary indicator (e.g., ±1), and p\_{o,c} represents the predicted probability that an object o belongs to class c.
 
 The **cross-entropy loss** measures the difference between the predicted probability distribution and the true class labels.  
 It penalizes confident but incorrect predictions more strongly, encouraging the model to output probabilities that reflect true likelihoods.
@@ -103,7 +103,7 @@ Each iteration determines:
 
 Through repeated updates, the optimizer converges toward parameters that minimize the loss and improve the model’s predictions.
 
-[Gradient Descent](./images/gradient-descent.png)
+![Gradient Descent](./images/gradient-descent.png)
 
 ## Training the Network
 
@@ -115,9 +115,7 @@ This process is called **backpropagation**.
 During backpropagation, the gradient of the loss function with respect to each weight and bias is computed by applying the **chain rule** of calculus.  
 This allows the network to determine how each parameter contributed to the overall error.
 
-\[
-v \;\xrightarrow{\; -\frac{\partial h(\cdot; w)}{\partial w}^T v \;}
-\]
+![Backpropagation Formula](./images/backpropagation-formula.png)
 
 The weights and biases are then updated to reduce this error, gradually improving the model’s predictions.
 
