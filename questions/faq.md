@@ -24,3 +24,7 @@
 ## Q6
 
 - Should we only use the libraries specified in the provided `requirements.txt`, or are we allowed to extend them with additional dependencies?
+
+## Q7
+
+- For questions or clarifications, should we contact **you** directly, or should we reach out to **Nikita**?
