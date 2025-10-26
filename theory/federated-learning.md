@@ -6,6 +6,8 @@
 Federated Learning (FL) is a distributed ML approach where model training happens where the data resides (e.g., phones, hospitals, edge devices).
 Instead of uploading raw data to a central server, participating clients compute local model updates and send only metadata (e.g., gradients or weights) to a coordinating server, which aggregates them into a new global model and broadcasts it back for the next training round.
 
+[![Video on the Concept of Federated Learning](https://img.youtube.com/vi/zqv1eELa7fs/0.jpg)](https://www.youtube.com/watch?v=zqv1eELa7fs)
+
 ## The Challenge of Classic Machine Learning
 
 Traditional (centralized) `Machine Learning` relies on collecting and storing all data in one place — typically on powerful servers or in the cloud.  
