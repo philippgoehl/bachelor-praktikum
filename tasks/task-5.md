@@ -4,7 +4,7 @@
 
 Present your approach and results in a presentation during the final event.
 
-## Task 5.2 (6 Pints)
+## Task 5.2 (6 Points)
 
 Write a report in which you reflect on your work and learning progress.
 The principle of “as much as necessary, as little as possible” applies. Get
